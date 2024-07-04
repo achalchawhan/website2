@@ -1,0 +1,833 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 97%; /* Make the navbar take the full width of the viewport */
+  height: 80px; /* Set a fixed height for the navbar */
+  background: #524D4D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add some padding for spacing */
+  position: relative;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.nav ul li a:hover {
+  color: orange;
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  position: relative;
+  right: 40px; /* Hide the menu icon by default */
+}
+
+/* Logo Image Styles */
+.img-icon img {
+  width: 50%; /* Ensure the image scales within its container */
+  position: relative;
+  top: 8px; /* Maintain aspect ratio */
+}
+
+/* Join Us Button Styles */
+.btnclass {
+  padding-right: 60px;
+  position: relative;
+  bottom: 30px;
+  left: 20px;
+}
+
+.btnst {
+  width: 150px;
+  height: 40px;
+  font-family: 'Radio Canada', sans-serif;
+  font-weight: 400;
+  line-height: 38.4px;
+  background: orange;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 38px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border: 2px solid black;
+}
+
+.btnst:hover {
+  color: #ffffff;
+}
+
+/* footer */
+
+.footer{
+  height: 300px;
+  background-color: rgba(82, 77, 77, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ftlogo img{
+  position: relative;
+  right: 40px;
+}
+
+.footer_div{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  
+}
+.footer_div2{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+.copyright{
+  height: 75px;
+  background-color: #FFA500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright div{
+  font-size: 20px;
+  font-weight: bold;
+  
+  
+}
+.grids{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+.grids a{
+  color: white;
+  text-decoration: none;
+}
+.tit{
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.tags{
+  font-size: 25px;
+  font-weight: bold;
+  color: #FFA500;
+  margin-bottom: 30px;
+}
+.ftlogo{
+  margin-left: -30px;
+  width: 150px;
+}
+.ftlogo+div{
+  color: #FFA500;
+  font-size: 20px;
+}
+.btntags{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+.btntags button{
+  padding: 7px 15px;
+  border-radius: 4px solid grey;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.btntags button:hover{
+  cursor: pointer;
+  color: black;
+}
+.yellowbtn{
+  background-color:#FFA500;
+  color: white;
+}
+.graybtn{
+  background-color: rgb(118, 113, 113);
+  color: white;
+}
+.tit~div{
+  margin-top: 20px;
+  color: white;
+}
+
+
+/* modal */
+
+.formbg {
+  width: 480px;
+  height: 610px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: orange;
+  display: none; /* Initially hide the form */
+  position: absolute;
+  z-index: 1000; /* Ensure it appears on top */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.email {
+  position: relative;
+ top: -10px;
+}
+.number {
+  position: relative;
+ top: -10px;
+}
+.firsth1 {
+  width: 161px;
+  height: 37px;
+  top: 146px;
+  left: 417px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 36.77px;
+  text-align: left;
+  color: #000000;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+.firstinput {
+  width: 400px;
+  height: 25px;
+  top: 202px;
+  left: 416px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #000000;
+  color:#000000;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  font-family: Ubuntu;
+  font-weight: 300;
+  line-height: 36.77px;
+  text-align: left;  
+  position: relative;
+  top: 10px;    
+}
+
+.checkbox {
+  width: 15px;
+  height: 15px;
+  background: #D9D9D9;
+  border-radius: 50%;
+  position: relative;
+  left: 60px; 
+  top: 5px;/* Make it circular */
+}
+
+.lbl {
+  width: 161px;
+  height: 37px;
+  top: 146px;
+  left: 417px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 36.77px;
+  text-align: left;
+  color: #000000;
+  position: relative;
+  top: 2px;
+  left: 60px;
+}
+
+.lbl2 {
+  width: 161px;
+  height: 37px;
+  top: 146px;
+  left: 417px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 36.77px;
+  text-align: left;
+  color: #000000;
+  position: relative;
+  top: 2px;
+  left: 60px;
+}
+
+.newsec {
+  position: relative;
+  left: 200px;
+  top: -35px;
+}
+
+.pm {
+  position: relative;
+  top: -50px;
+}
+
+.pm2 {
+  position: relative;
+  top: -100px;
+}
+
+.pm3 {
+  position: relative;
+  top: -20px;
+}
+
+.checkboxlast {
+  width: 20px;
+  height: 20px;
+  top: 594px;
+  left: 417px;
+  gap: 0px;
+  opacity: 1px;
+  background: #D9D9D9;
+  position: relative;
+  top: -50px;
+  left: 50px;
+  border-radius: -50%;
+}
+
+.para {
+  position: relative;
+  left: 70px;
+  top: -70px;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.98px;
+  text-align: left;
+
+}
+
+.btn {
+  width: 120px;
+  height: 40px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid #000000;
+  background: #8D8383;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 38.4px;
+  cursor: pointer;
+  text-align: center;
+  color: #000000;
+}
+
+.btnsts {
+  position: relative;
+  top: -50px;
+  left: 15px;
+  display: flex;
+  gap: 200px;
+}
+
+
+  /* first container */
+
+  .first{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .imgbox{
+    width: 60%;
+    height: 500px;
+    border-radius: 25px;
+    margin-right: 50px;
+    position: relative;
+    top: -10px;
+  }
+  .imgbox img{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin-right: 50px;
+    transition: all 0.3s ease-in-out; /* Added 's' for seconds */
+  }
+  
+  .imgbox img:hover { /* Removed space between img and :hover */
+    transform: scale(1.1);
+    filter: grayscale(100%);
+  }
+
+  .txtbox{
+    width: 50%;
+    font-size: 28px;
+    font-weight: 550;
+  }
+  .txtbox p{
+    width: 100%;
+    text-align: justify;
+    height: 500px;
+    position: relative;
+    left: 30px;
+  }
+
+  /* second container */
+
+  .second{
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .txtbox2 h4 {
+    position: relative;
+    right: 150px;
+    top: 70px;
+    color: blue;
+  }
+  .container2{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgbox2{
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .imgbox2 img{
+    width: 300px;
+    height: 500px;
+    border-radius: 2px;
+    position: relative;
+    right: 200px;
+  }
+  .txtbox2{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 2500px;
+    font-size: 28px;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+  }
+  .txtbox2 ul{
+    list-style:none;
+    font-size: 30px;
+    position: relative;
+    right: 130px;
+    bottom: 50px;
+    font-size: 20px;
+  }
+  .txtbox2 div{
+    font-weight: bold;
+  }
+  .txtbox2 p{
+    text-align: justify;
+  }
+
+  /* third container */
+
+  .third{
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container3{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+  .imgbox3{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .imgbox3 img{
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    position: relative;
+    left: 20px;
+  }
+  
+  .imgbox3 img:hover { /* Removed space between img and :hover */
+    transform: scale(1.1);
+    filter: grayscale(100%);
+  }
+  .txtbox3{
+    width: 50%;
+    font-size: 28px;
+    font-weight: 550;
+  }
+  .txtbox3 p{
+    text-align: justify;
+  }
+@media screen and (max-width: 600px) {
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 20px; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+    display: none; /* Hide the menu by default */
+    text-align: center;
+    background-color: violet;
+    height: 290px;
+}
+
+.nav ul.show {
+    display: flex; /* Show the menu when .show is added */
+}
+
+.nav ul li {
+    padding: 5px 0;
+    color: black;
+}
+.nav ul li a {
+    color: black;
+}
+
+.menu-icon {
+    display: block; /* Show the menu icon on small screens */
+}
+
+.btnclass {
+    display: none; /* Hide the join button on small screens */
+}
+
+.img-icon img {
+    margin-left: -20px;
+}
+
+.btnclass {
+    display: block;
+}
+
+    /* footer */
+
+    .footer{
+      height: auto;
+      background-color: rgba(82, 77, 77, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer_div{
+      width: 90%;
+      padding:20px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+  }
+  .footer_div2{
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+      position: relative;
+      left: 70px;
+  }
+  .grids{
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      margin-top: 50px;
+  }
+  .grids a{
+      color: white;
+      text-decoration: none;
+  }
+  .tit{
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .tags{
+      font-size: 20px;
+      font-weight: bold;
+      color: #FFA500;
+      margin-bottom: 20px;
+  }
+  .ftlogo{
+      margin-left: 0px;
+  }
+  .ftlogo+div{
+      color: #FFA500;
+      font-size: 23px;
+  }
+  .btntags{
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      margin-top: 50px;
+  }
+  .btntags button{
+      padding: 5px 10px;
+      border-radius: 2px;
+      border: none;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-size: 12px;
+  }
+  .btntags button:hover{
+      box-shadow: 0px 0px 0px 1px rgb(238, 227, 227);
+  }
+  .yellowbtn{
+      background-color:#FFA500;
+      color: white;
+  }
+  .graybtn{
+      background-color: rgb(118, 113, 113);
+      color: white;
+  }
+  .tit~div{
+      margin-top: 20px;
+      color: white;
+  }
+  .copyright{
+      height: 50px;
+      background-color: #FFA500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .copyright h1{
+      font-size: 18px;
+      font-weight: bold;
+  }
+
+    /* modal */
+    .formbg 
+    {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        height: 100vh;
+        margin-top: 30px;
+    }
+    .btnsts {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .firstinput {
+        width: 90%;
+    }
+
+    .lbl2 {
+        position: relative;
+        right: 50px;
+    }
+
+
+      /* first container */
+
+  .first{
+    height: 182vh;
+    background-color:aqua;
+    
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    top: 50px;
+  }
+  .imgbox{
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;  
+  }
+  .imgbox img{
+    display: none;
+    width: 400px;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    left: 50px;
+  }
+  .txtbox{
+    width: 80%;
+    font-size: 20px;
+    position: relative;
+    left: -30px;
+    top: 60px;
+  }
+  .txtbox p{
+    text-align: justify;
+    position: relative;
+    bottom: 80px;
+  }
+
+  /* second container */
+
+  .second{
+    height: 150vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgbox2{
+    width: 135%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    margin-bottom: 30px;
+  }
+  .imgbox2 img{
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  .txtbox2{
+    /* padding:0px 10px; */
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 90%;
+    font-size: 20px;
+    position: relative;
+    left: -1px;
+    top: 30px;
+  }
+
+  .txtbox2 h4 {
+    position: relative;
+    left: -10px;
+    top: -10px;
+  }
+  .txtbox2 ul{
+    list-style:none;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 20px;
+    position: relative;
+    left: 15px;
+    top: 10px;
+  }
+  .txtbox2 div{
+    font-weight: bold;
+  }
+  .txtbox2 p{
+    text-align: justify;
+  }
+  
+  /* third container */
+
+  .third{
+    height: 150vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container3{
+    width: 90%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .imgbox3{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .imgbox3 img{
+    width: 100%;
+    border-radius: 10px solid black;
+    position: relative;
+    bottom: 30px;
+  }
+  .txtbox3{
+    width: 80%;
+    height: 50%;
+    font-size: 20px;
+    font-size: 20px;
+  }
+  .txtbox3 p{
+    text-align: justify;
+  }
+}

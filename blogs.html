@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Star Gym</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="img-icon">
+            <img src="images/logo.png" alt="fitness logo">
+        </div>
+            <ul class="nav-links" id="menuList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li>
+                    <div class="btnclass">
+                        <button class="btnst" onclick="showPopup()">Join Us</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" id="menuIcon"></i>
+            </div>   
+    </nav>
+<section>
+    
+    <div class="first">
+        <div class="container">
+            <div class="imgbox">
+                <img src="images/dylan-gillis.jpeg" alt="">
+            </div>
+            <div class="txtbox">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centrelease of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        <div class="container2">
+            <div class="txtbox2">
+                <h4>BENEFITS OF A HEALTHY DIET</h4>
+                <ul><li>May help you live longer.</li>
+                    <li>Keeps skin, teeth, and eyes healthy.</li>
+                    <li>Supports muscles.</li>
+                    <li>Boosts immunity.</li>
+                    <li>Strengthens bones.</li>
+                    <li>Supports healthy pregnancies and breastfeeding.</li>
+                    <li>Helps the digestive system function.</li>
+                </ul>
+            </div>
+            <div class="imgbox2">
+                <img src="images/pexels-taryn.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="container3">
+            <div class="txtbox3">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centrelease of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="imgbox3">
+                <img src="images/pexels-bamboo.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer">
+        <div class="footer_div">
+            <div>
+                <div class="ftlogo"><a href="#"><img src="images/logo.png" height="70px" width="180px" alt=""></a></div>
+                <div>Prioritize Your Fitness Goals
+                    with our world class services</div>
+            </div>
+            <div class="footer_div2">
+                <div class="grids">
+                    <div class="tit">Company</div>
+                    <div><a href="#">About</a></div>
+                    <div><a href="#">Careers</a></div>
+                    <div><a href="#">Blogs</a></div>
+                </div>
+                <div class="grids">
+                    <div class="tit">Contact</div>
+                    <div><a href="#">Help/FAQs</a></div>
+                    <div><a href="#">Press</a></div>
+                    <div><a href="#">Mobile</a></div>
+                </div>
+                <div class="grids">
+                    <div class="tit">More</div>
+                    <div><a href="#">Program</a></div>
+                    <div><a href="#">Plans</a></div>
+                    <div><a href="#">Method</a></div>
+                </div>
+                <div class="btntags">
+                    <div class="tags">Popular Tags</div>
+                    <div><button class="graybtn">ABS</button><button class="graybtn">Workout</button></div>
+                    <div><button class="yellowbtn">Nutrition</button><button class="graybtn">GYM</button></div>
+                    <div><button class="graybtn">Boxing</button><button class="yellowbtn">Trainers</button></div>
+                    <div><button class="yellowbtn">Facilities</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <h1>CopyRight  All  Rights  Reserved</h2>
+    </div>
+</footer>
+<!-- modal -->
+<div class="formbg" id="popupForm" class="popup-form">
+    <h2 style="text-align: center; color:darkblue;">Subscription form</h2>
+    <div class="fname">
+        <h1 class="firsth1">Full Name:</h1>
+        <input type="text" class="firstinput" placeholder="Enter your first name">
+    </div>
+    <div class="email">
+        <h1 class="firsth1">Email:</h1>
+        <input type="text" class="firstinput" placeholder="Enter your email address">
+    </div>
+    <div class="number">
+        <h1 class="firsth1">Mobile No:</h1>
+        <input type="text" class="firstinput" placeholder="Enter your mobile number">
+    </div>
+    <div class="checks1">
+        <h1 class="firsth1">Duration:</h1>
+        <div>
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl" for="">Monthly</label>
+        </div>
+        <div class="newsec">
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl2" for="">Yearly</label>
+        </div>
+    </div>
+    <div class="pm">
+        <h1 class="firsth1">Mode of Payment:</h1>
+        <div>
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl" for="">Cash</label>
+        </div>
+        <div class="newsec">
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl2" for="">Online</label>
+        </div>
+    </div>
+    <div class="pm2">
+        <h1 class="firsth1">Personal Training:</h1>
+        <div>
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl" for="">Required</label>
+        </div>
+        <div class="newsec2">
+            <input type="checkbox" name="" id="checkbox" class="checkbox">
+            <label class="lbl2" for="">Not Required</label>
+        </div>
+    </div>
+    <div class="pm3">
+        <div>
+            <input type="checkbox" name="" id="checkbox" class="checkboxlast">
+            <div class="para">
+                <p>I accept all terms and conditions</p>
+                <p style="margin-top: -5px;">provided in this form.</p>
+            </div>
+        </div>
+        <div class="btnsts">
+            <button class="btn" style="background-color: greenyellow;">BUY PLAN</button>
+            <button class="btn" style="background-color: red;" onclick="hidePopup()">CANCEL</button>
+        </div>
+    </div>
+</div>
+<script>
+      const toggleMenu = () => {
+            const menuList = document.querySelector('.nav ul');
+            menuList.classList.toggle('show');
+        }
+
+        const showPopup = () => {
+            document.getElementById("popupForm").style.display = "block";
+        }
+
+        const hidePopup = () => {
+            document.getElementById("popupForm").style.display = "none";
+        }
+</script>
+<script src="https://kit.fontawesome.com/9e22f567be.js" crossorigin="anonymous"></script>
+</body>
+</html>
